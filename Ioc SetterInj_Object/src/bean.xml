@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+  
+  <bean id="addr" class="com.jbk.setterObj.Address">
+  <property name="city">
+  <value>Pune</value>
+  </property>
+  
+  <property name="state">
+  <value>Maharastra</value>
+  </property>
+  
+  <property name="country">
+  <value>India</value>
+  </property>
+  </bean>
+  
+<bean id="stud" class="com.jbk.setterObj.Student">  
+<property name="rollno">
+<value>101</value>
+</property>  
+
+<property name="name">
+<value>Ram</value>
+</property>
+
+<property name="address" ref="addr"></property>
+</bean>  
+  
+</beans> 
